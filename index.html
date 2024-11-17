@@ -17,75 +17,45 @@
     console.log(`Cart quantity:${showQuantity}`)">Reset Cart</button> -->
 
      <p>Rock Paper Scissors</p>
-     <button onclick="const randomNumber1=Math.random();
-     let computerMove1 ;
-      if(randomNumber1>=0 && randomNumber1<1/3){
-        computerMove1='Rock';
-      }
-      else if(randomNumber1>=1/3 && randomNumber1<2/3){
-         computerMove1='Paper';;
-      }
-      else if(randomNumber1>=2/3 && randomNumber1<1){
-         computerMove1='Scissors';
-      }
+     <button onclick="PickcomputerMove();
       let result1;
-      if(computerMove1==='Rock'){
+      if(computerMove==='Rock'){
         result1='Tie';
       }
-      else if(computerMove1==='Paper'){
+      else if(computerMove==='Paper'){
         result1='Computer Wins';
       }
-      else if(computerMove1=='Scissors'){
+      else if(computerMove=='Scissors'){
         result1='You win';
       }
-      alert(`You picked rock.Computer picked ${computerMove1}.${result1}`);
+      alert(`You picked rock.Computer picked ${computerMove}.${result1}`);
      ">Rock</button>
 
-     <button onclick="const randomNumber2=Math.random();
-     let computerMove2 ;
-      if(randomNumber2>=0 && randomNumber2<1/3){
-        computerMove2='Rock';
-      }
-      else if(randomNumber2>=1/3 && randomNumber2<2/3){
-         computerMove2='Paper';;
-      }
-      else if(randomNumber2>=2/3 && randomNumber2<1){
-         computerMove2='Scissors';
-      }
+     <button onclick="PickcomputerMove();
       let result2;
-      if(computerMove2==='Rock'){
+      if(computerMove==='Rock'){
         result2='You win';
       }
-      else if(computerMove2==='Paper'){
+      else if(computerMove==='Paper'){
         result2='Tie';
       }
-      else if(computerMove2=='Scissors'){
+      else if(computerMove=='Scissors'){
         result2='Computer win';
       }
-      alert(`You picked paper.Computer picked ${computerMove2}.${result2}`);
+      alert(`You picked paper.Computer picked ${computerMove}.${result2}`);
      ">Paper</button>
-     <button onclick="const randomNumber3=Math.random();
-     let computerMove3 ;
-      if(randomNumber3>=0 && randomNumber3<1/3){
-        computerMove3='Rock';
-      }
-      else if(randomNumber3>=1/3 && randomNumber3<2/3){
-         computerMove3='Paper';;
-      }
-      else if(randomNumber3>=2/3 && randomNumber3<1){
-         computerMove3='Scissors';
-      }
+     <button onclick="PickcomputerMove();
       let result3;
-      if(computerMove3==='Rock'){
+      if(computerMove==='Rock'){
         result3='Computer win';
       }
-      else if(computerMove3==='Paper'){
+      else if(computerMove==='Paper'){
         result3='You win';
       }
-      else if(computerMove3=='Scissors'){
+      else if(computerMove=='Scissors'){
         result3='Tie';
       }
-      alert(`You picked Scissors.Computer picked ${computerMove3}.${result3}`);
+      alert(`You picked Scissors.Computer picked ${computerMove}.${result3}`);
      ">Scissors</button>
     <script src="script.js"></script>
 </body>
